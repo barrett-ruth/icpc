@@ -1,6 +1,8 @@
 # icpc
 
-collection of the university of virginia's icpc practice session problems from academic year 2024
+collection of icpc practice problems from the university of virginia
+
+academic year 2024
 
 ## team
 
