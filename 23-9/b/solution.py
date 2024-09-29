@@ -77,7 +77,6 @@ def max_candidate_captures(board, r, c) -> int:
     for dr, dc in capturing_moves(board, r, c):
         # place
         board[r][c] = "."
-        prev = board[r + dr][c + dc]
         board[r + dr][c + dc] = "."
         board[r + dr * 2][c + dc * 2] = "W"
 
@@ -87,7 +86,7 @@ def max_candidate_captures(board, r, c) -> int:
         # unplace
         board[r + dr * 2][c + dc * 2] = "."
         board[r][c] = "W"
-        board[r + dr][c + dc] = prev
+        board[r + dr][c + dc] = "B"
 
     return max_captures
 
